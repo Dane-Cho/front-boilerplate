@@ -1,0 +1,70 @@
+{
+  "name": "web-frontend-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "prompt web front-end boilerplate",
+  "scripts": {
+    "build": "gulp",
+    "deploy": "cross-env NODE_ENV=production gulp",
+    "start": "gulp dev",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/prompt-dev/web-frontend-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "jjpark@prompt.co.kr",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/prompt-dev/web-frontend-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^17.0.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "browser-sync": "^2.18.2",
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.26.1",
+    "del": "^2.2.2",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-less": "^3.3.0",
+    "html-webpack-plugin": "^2.24.1",
+    "jest": "^17.0.3",
+    "jquery": "^3.1.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "react-dev-utils": "^0.4.2",
+    "react-test-renderer": "^15.4.1",
+    "run-sequence": "^1.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "icheck": "^1.0.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "store": "^1.3.20",
+    "sweetalert": "^1.1.3",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "jest": {
+    "browser": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb",
+  "installedESLint": true,
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.config.js", "**/*.babel.js", "**/*.test.*"]}],
+    "import/extensions": 0,
+    "react/prop-types": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "linebreak-style": 0
+  }
+}
